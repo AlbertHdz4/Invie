@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- This meta tag helps us to obtain the real size of our smartphone, content, has many attributes, first
+		it has width= devive-width which indicates that our width has to be the device width, initial-scale, indicates
+		if we a zoom or we want that the screens is with the normal size and finally user scalable, indicates if the user
+		can do zoom or not -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>Invie - Tus Mejores Guitarras</title>
+		<!-- This is a connection to stylsheet (CSS) -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet"> -->
+		<!-- With the symbol | we can load two stylesheets at the same time and in one link -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet"> -->
+		<style>@font-face{font-family:'icomoon';src:url(fonts/icomoon.eot?dl93pt);src:url(fonts/icomoon.eot?dl93pt#iefix) format("embedded-opentype"),url(fonts/icomoon.ttf?dl93pt) format("truetype"),url(fonts/icomoon.woff?dl93pt) format("woff"),url(fonts/icomoon.svg?dl93pt#icomoon) format("svg");font-weight:400;font-style:normal}[class^="icon-"],[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-phone:before{content:"\e942"}.icon-menu:before{content:"\e9bd"}.icon-cancel:before{content:"\ea0d"}.icon-mail4:before{content:"\ea86"}.contenedor{max-width:800px;margin:auto}body{font-family:'Allerta',sans-serif;margin:0}.header{position:relative}.logotipo{display:inline-block;margin-left:0;margin-right:200px}.menu{font-size:15px;font-family:'Montserrat',sans-serif;font-style:bold;display:inline-block;top:20px;right:0}.menu li:before{content:'∴';color:#fff;margin-right:3px;font-size:20px}.menu li{display:inline-block;margin-left:30px}.menu a,.button a{text-decoration:none;color:#fff}.portada{background-image:url(images/background.png);background-size:cover;padding:20px;color:#fff}.portada button{margin-bottom:90px}.titulo{font-family:'Montserrat',sans-serif;font-size:70px;margin-top:70px;margin-bottom:0}.titulo span{text-decoration:underline}.title-a{font-family:'Montserrat',sans-serif;font-size:24px;margin-top:0}.button{border-radius:20px;background:#FD324E;display:inline-block;margin:20px 0 60px;background:linear-gradient(to left,#fe344e,#ff7250);color:#fff;padding:7px 12px;font-size:18px;border:none;text-decoration:none;cursor:pointer}.guitarras{color:#1F313C}.guitarras h2{font-size:35px}.guitarra{margin:15px 15px 50px;padding:5px;border:5px solid #1F313C;border-radius:30px}.derecha{float:right;position:relative;width:300px;height:300px;top:-86px}.title-b{font-size:50px;padding-left:10px;margin-bottom:10px}.izquierda{float:left;position:relative;top:-48px;left:-13px;width:426px;height:324px}.footer{background:#273b47;margin-top:70px;padding-top:25px;padding-bottom:25px;clear:both}.footer .contenedor{display:flex;justify-content:space-between}.contacto{display:flex;width:300px;flex-wrap:wrap}.contacto img{display:block;margin-bottom:20px}.contacto a{display:block;color:#fff;text-decoration:none;margin:10px 10px 10px 0}.tel{margin-bottom:15px}.formulario{display:flex;width:400px;color:#fff}.col1{margin-right:15px}.formulario input,.sexo,.intereses{margin:0 0 15px}.intereses{padding-right:75px;margin:0}.intereses label{font-size:11px}.col1,.col2{display:flex;flex-direction:column}.col2{text-align:left}#comentarios{text-align:left;margin:0 auto 20px}th,td{border:4px solid #273b47;border-radius:10px}table{width:100%;margin-top:50px}th{background:#273b47;font-family:'Montserrat',sans-serif;color:#fff;padding:5px}td{padding:10px;text-align:center}textarea{width:100%}.burger-button{width:40px;height:40px;line-height:40px;border-radius:50%;background:#395667;display:inline-block;text-align:center;cursor:pointer;position:fixed;left:20px;top:20px;z-index:3;display:none}.video-demo{width:500px;border:5px solid #3c5b6e}.video-demo-contenedor{display:flex;justify-content:center;margin-bottom:80px}@media screen and (max-width: 800px){*{margin:0;padding:0;text-align:center}.logotipo{display:block;margin:10px 0}.menu{display:block}.titulo{font-size:45px;margin-top:30px}.title-a{font-size:15px;padding-left:0}.portada{height:auto}.portada .button{display:inline-block;margin:30px 0;text-align:center}.guitarras h2{margin:30px 0}.izquierda,.derecha{float:none;position:static}.guitarra li{list-style:none}.guitarra.b{height:auto;width:auto}.video-demo-contenedor{margin-bottom:40px}.intereses{padding-right:25px}table{margin:0}.tabla .contenedor{overflow:auto;margin:50px 10px;border:1px solid #273b47}}@media screen and (max-width: 767px){footer{font-size:12px}.footer .contenedor{display:block;margin:0}.footer-img{margin:0 auto}.contacto{margin:0 auto}.contacto a{margin:0 auto}.formulario{display:block;margin:10px auto;width:200px}.sexo label{margin:0 4px}.intereses label{display:block;text-align:left;font-size:16px;padding-left:3px}input[type="text"],input[type="email"]{font-size:17px;padding:5px}input[type="radio"],input[type="checkbox"]{zoom:1.5}.col1{margin:0}}@media screen and (max-width: 650px){.menu{position:static}.menu ul{padding:0}}@media screen and (max-width: 500px){.precios .header .logotipo{margin:30px}.portada .button,.portada a{display:block}.burger-button{display:block}.portada .contenedor{position:static}.menu{background:rgba(255,60,88,0.8);position:fixed;left:-100%;right:0;top:0;bottom:0;z-index:2;display:flex;align-items:center;width:100%;transition:.3s}.menu.active{left:0}.menu ul{flex:1}.menu li{display:block;margin:0;padding:8px 0;border-bottom:2px solid #fff}.menu li:first-child{border-top:2px solid #fff}.menu li:before{display:none}.portada{text-align:center}.guitarras li{font-size:14px;margin:3px 0}.titulo{font-size:30px}.title-a,.title-b{padding:0}.title-a{font-size:13px}.button{font-size:12px}.guitarra img{width:200px;height:auto}.title-b{font-size:30px}}video{width:100%}.video-responsive-contenedor{position:relative;padding-top:56.25%}.video-responsive-src{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%}@media screen and (-webkit-min-device-pixel-ratio: 2){.portada{background-image:url(images/background2x.png);background-color:#1F313C}}</style>
+		<!-- This is a new link which helps us to know the status of the web browser, media is like an if -->
+		<!-- <link rel="stylesheet" media="(max-width: 800px)" href="CSS/media-querie.css"> -->
+		<!-- This is another way to apply styles -->
+		<!--  <style>
+			body
+			{
+				 background: blue;
+			}
+		</style> -->
+	</head>
+	<body>
+		<!-- This is the header of our HTML document, We will have here our menu and logo -->
+		<!-- We can add styles through line, which means in the same Tag, This is not the best option! -->
+		<!-- <header id="header" style="background: gray"> -->
+		<div class="portada">
+			<header id="header" class="header contenedor">
+				<!-- Logo, the figure tag helps to put or collocate an image or a group of images -->
+				<figure class="logotipo">
+					<!-- src could contain two kind of routes, absolute routes (www.facebook.com/images/logo.jpg) and relatives routes (images/logo.png) -->
+					<!-- We also give to the logo a size -->
+					<!-- src is only to set standard quality of our images -->
+					<!-- srcset allows us to set retina images in our document -->
+					<!-- This is how we can use images with a high quality -->
+					<img src="Images/invie.png" srcset="Images/invie.png 1x, Images/invie2x.png 2x" width="186" height="60" alt="Invie Logotipo"/>
+				</figure>
+				<!-- for a Menu we have the Nav Tag -->
+				<span class="burger-button icon-menu" id="burger-button"></span>
+				<nav class="menu" id="menu">
+					<!-- We have two kind of lists ul (unorder list) and ol (order lists) -->
+					<ul>
+						<!-- a Tag helps us to link the text inside this tag -->
+						<!-- it can be added another attribute target="_blank" to show other window with a new webpage -->
+						<li><a href="index.html">Home</a></li>
+						<!-- # leads us to a section in the same page by ID selector -->
+						<li><a href="#guitarras">Guitarras</a></li>
+						<li><a href="precios.html">Precios</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Portada -->
+			<section id="portada">
+				<!-- We have created a div only to make webpage appareance better, it is usually used for appareance ways -->
+				<div class="contenedor">
+					<!-- Title, for titles we usually use h1 (heading 1), make sure that you are only using an only one h1, "SEO" -->
+					<h1 class="titulo">Guitarras <span>Invie</span>sibles</h1>
+					<!-- Overview of our products -->
+					<!-- We could use from h1 to h6 for titles or texts, depends of relevance -->
+					<h3 class="title-a">Sé la estrella de Rock que siempre quisiste ser</h3>
+					<!-- Button -->
+					<!-- <button> -->
+					<a class="button" href="#guitarras">Conoce Más</a>
+					<!-- </button> -->
+				</div>
+			</section>
+		</div>
+
+		<!-- We will have here our kind of guitars -->
+		<section id="guitarras" class="guitarras contenedor">
+			<!-- Title of our kind of guitar we have, another different section, this is why we are using h2 -->
+			<h2>Nuestras Guitarras</h2>
+			<!-- Watch out with this way to sort the information, it is not the best -->
+			<div class="video-demo-contenedor">
+				<div class="video-demo">
+					<div class="video-responsive-contenedor">
+						<iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<!-- <video src="video/320x240.ogg"></video> -->
+			<!-- Guitar 1 -->
+			<!-- Article Tag is usally using to show a particular content of our webpage, independent information -->
+			<article class="guitarra a">
+				<img class="derecha" data-src="Images/invie-acustica.png|Images/invie-acustica2x.png" alt="Guitarra Invie Acústica"  />
+				<!-- We use h3 to underline our product -->
+				<h3 class="title-b">Invie Acústica</h3>
+				<!-- We will create an order list (ol) to enlist features of our guitars -->
+				<ol>
+					<li>Estilo Vintage</li>
+					<li>Madera Pura</li>
+					<li>Incluye Estuche Invisible de Aluminio</li>
+				</ol>
+			</article>
+			<!-- Guitar 2 -->
+			<article class="guitarra b">
+				<img class="izquierda" data-src="Images/invie-classic.png|Images/invie-classic2x.png" alt="Guitarra Invie Classic" />
+				<!-- We use h3 to underline our product -->
+				<h3 class="title-b">Invie Classic</h3>
+				<!-- We will create an order list (ol) to enlist features of our guitars -->
+				<ol>
+					<li>Estilo Vintage</li>
+					<li>Liviana</li>
+					<li>Inicia tu camino como Rockstar</li>
+				</ol>
+			</article>
+		</section>
+		<footer class="footer">
+			<div class="contenedor">
+				<div class="contacto">
+					<img class="footer-img" data-src="Images/invie-white.png|Images/invie-white2x.png" alt="logotipo blanco" />
+					<a class="tel" href="tel:+5526378729"><strong>Teléfono</strong><span><br />(+55) 3059 2047</span></a>
+					<a class="mail" href="mailto:contacto@invie.com"><strong>Email</strong><span><br />contacto@invie.com</span></a>
+				</div>
+				<form class="formulario">
+					<div class="col1">
+						<!-- formulario -->
+						<!-- for has to be the same than the ID which we want to focus when we click over (in this case) nombre -->
+						<label for="Nombre">Nombre</label>
+						<!-- We can have different attributes for input
+						required -> it is to obligate the user to fill this info
+						value -> it helps us to set a value inside the textbox, button, etc
+						placeholder -> it is similar a label with the difference we cannot select this text it is used to
+						show what is the function of the textbox placeholder="Introduce Nombre" -->
+						<input type="text" requiered id="Nombre" name="nombre" />
+						<label for="email">Email</label>
+						<input type="email" required id="Email" nombre="email" />
+						<!-- We use the attribute name to indicate to the server that the user has selected only one option
+						in this case the user has selected woman or man we use the same attribute to select one option and at
+						the same time deselect the another option, it should be noted we can indicate to server which information
+						We have sent for example name, email, sex, etc when the form has been filled -->
+						<div class="sexo">
+							<label for="mujer">
+								<input type="radio" id="mujer" name="sexo" value="mujer" checked /> Mujer
+							</label>
+							<label for="hombre">
+								<input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
+							</label>
+						</div>
+						<div class="intereses">
+							<label for="cotizacion">
+								<!-- For multiple selections we can use the type value "checkbox", I chose radio
+								because I only want to send one option -->
+								<label for="cotizacion">
+									<input type="checkbox" id="cotizacion" name="intereses" value="cotización" checked />Cotización
+								</label>
+								<label for="Reclamos">
+									<input type="checkbox" id="reclamos" name="intereses" value="reclamos" />Reclamos
+								</label>
+								<label for="comentarios">
+									<input type="checkbox" id="comentarios" name="intereses" value="comentarios" />Comentarios
+								</label>
+								<label for="otros">
+									<input type="checkbox" id="otros" name="intereses" value="otros" />Otros
+								</label>
+						</div>
+					</div>
+					<div class="col2">
+						<label for="comentarios">Comentario</label>
+						<!-- Textarea helps us to write many lines, it is different than input type="text", cols and
+						rows determine the size or the quantity of the words could have our textarea, name is used to tell the
+						server what we have sent to it-->
+						<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+						<!-- This input will be the button which helps us to send the info to the server -->
+						<input type="submit" value="Enviar" class="button" />
+					</div>
+				</form>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+		  WebFont.load({
+		    google: {
+		      families: ['Montserrat:400,700:latin', 'Allerta:latin']
+		    }
+		  });
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		<script>
+			var consulta = window.matchMedia("(max-width:500px)");
+			var burgerButton = document.getElementById("burger-button");
+			var menu = document.getElementById("menu");
+			var body = document.body;
+			var gestos = new Hammer(body);
+
+			mediaQuery();
+			consulta.addListener(mediaQuery);
+			// Gestos Touch
+			gestos.on("swipeleft", hideMenu);
+			gestos.on("swiperight", showMenu);
+
+			// Lazy loading
+			var blazy = new Blazy
+			({
+				// opciones de Blazy, we need to put a selector to indicate which tags or information we are
+				// going to modify, in this case images
+				selector: "img"
+			});
+
+			function mediaQuery()
+			{
+				if(consulta.matches)
+				{
+					console.log("se cumplio la condicion");
+					burgerButton.addEventListener("touchstart", active);
+				}
+				else
+				{
+					burgerButton.removeEventListener("touchstart", active);
+					console.log("No se cumplio la condicion");
+				}
+			}
+			// $menu.classList.add("active");
+			// $menu.classList.remove("active");
+	 		function active()
+			{
+				menu.classList.toggle("active");
+			}
+
+			// Gestos Touch
+			function showMenu(){
+				menu.classList.add("active");
+			}
+
+			function hideMenu(){
+				menu.classList.remove("active");
+			}
+		</script>
+		<!-- <link rel="stylesheet" href="CSS/invie.css" /> -->
+	</body>
+</html>

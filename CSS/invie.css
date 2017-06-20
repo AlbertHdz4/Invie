@@ -1,0 +1,666 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?dl93pt');
+  src:  url('../fonts/icomoon.eot?dl93pt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dl93pt') format('truetype'),
+    url('../fonts/icomoon.woff?dl93pt') format('woff'),
+    url('../fonts/icomoon.svg?dl93pt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cancel:before {
+  content: "\ea0d";
+}
+.icon-mail4:before {
+  content: "\ea86";
+}
+
+/*tipo de selector{
+	propiedad: valor;
+	propiedad-2: valor;
+}
+
+Selector types
+Universal Selector
+* {
+	border: 1px solid red;
+	margin: 10px;
+}
+
+Tag Selector 
+header {
+	background: blue;
+}
+
+section {
+	background: purple;
+}
+
+Downward Selector
+This only selects TAGS, which are inside the TAG mentioned before h3 (in this case - article)
+article h3 {
+	color: green;
+}
+
+Class Selector
+.title-a{
+	background: yellow;
+}
+
+.title-b{
+	background: salmon;
+}
+
+ID Selector
+We are only allowed to have an only one ID, it is not possible to have another ID with the same name
+#header{
+	border: 3px solid black;
+}
+
+#portada{
+	border: 3px solid orange;
+}
+
+#guitarra{
+	border: 3px solid brown;
+}
+*/
+/**{
+	width: ;
+	height: ;
+	We can change in different ways our padding,this actions is showed in the next line codes
+	padding-top: 10px;
+	padding-right: 13px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	padding: 10px 13px 5px 15px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-right: 13px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	margin: 10px 13px 5px 15px;
+	margin: 10px;
+	We can change types of borders solid, dasher, etc
+	border: 2px solid red;
+}*/
+
+/*General Classes*/
+.contenedor{
+	max-width: 800px;
+	margin: auto;	
+}
+
+body{
+	font-family: 'Allerta', sans-serif;
+	margin: 0px;
+}
+
+.header{
+	position: relative;
+}
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 200px;
+}
+
+.menu{
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: bold ;
+	display: inline-block;
+	top: 20px;
+	right: 0px;
+}
+
+.menu li:before{
+	content: '∴';
+	color: white;
+	margin-right: 3px;
+	font-size: 20px;
+}
+
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.menu a, .button a{
+	text-decoration: none;
+	color: white
+}
+
+.portada{
+	background-image: url('../images/background.png');
+	background-size: cover;
+	padding: 20px;
+	color: white;
+}
+
+.portada button{
+	margin-bottom: 90px;
+}
+
+.titulo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	margin-top: 70px;
+	margin-bottom: 0px;
+}
+
+.titulo span{
+	text-decoration: underline;
+}
+
+.title-a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	margin-top: 0px;
+}
+
+.button{
+	border-radius: 20px;
+	background: #FD324E;
+	display: inline-block;
+	margin: 20px 0px 60px 0px;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	color: white;
+	padding: 7px 12px;
+	font-size: 18px;
+	border: none;	
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.guitarras{
+	color: #1F313C;
+}
+
+/*Selector descendente, padre (guitarras) e hijo(h2)*/
+.guitarras h2{
+	font-size: 35px;
+}
+
+.guitarra{
+	/*Overflow helps to keep the box model of our articles in HTML, 
+	if we want to place an image with relative we have to delete the overflow style*/
+	/*overflow: hidden;*/
+	margin: 15px 15px 50px 15px;
+	padding: 5px;
+	border: 5px solid #1F313C;
+	border-radius: 30px;
+}
+
+.derecha{
+	float: right;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	top: -86px;
+}
+
+.title-b{
+	font-size: 50px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.izquierda{
+	float: left;
+	position: relative;
+	top: -48px;
+	left: -13px;
+	width: 426px;
+	height: 324px;
+}
+
+.footer{
+	background: #273b47;
+	margin-top: 70px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	clear: both; 
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacto{
+	display: flex;
+	width: 300px; 
+	flex-wrap: wrap;    	
+}
+
+.contacto img{
+	display: block;
+	margin-bottom: 20px
+}
+
+.contacto a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0px;
+}
+
+.tel{
+	margin-bottom: 15px;
+}
+
+.formulario{
+	display: flex;
+	width: 400px;
+	color: white;
+}
+
+.col1{
+	margin-right: 15px;
+}
+
+.formulario input, .sexo, .intereses{
+	margin: 0px 0px 15px 0px;
+}
+
+.intereses{
+	padding-right: 75px;
+	margin: 0px;
+}
+
+.intereses label{
+	font-size: 11px;
+}
+
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+}
+
+.col2{
+	text-align: left;
+}
+
+#comentarios{
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto; 
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+th, td{
+	border: 4px solid #273b47;
+	border-radius: 10px;
+}
+
+table{
+	width: 100%;
+	margin-top: 50px;
+}
+
+th{
+	background: #273b47;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding: 5px;
+}
+
+td{
+	padding: 10px;
+	text-align: center;
+}
+
+textarea{
+	width: 100%;
+}
+
+.burger-button{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background: #395667;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	z-index: 3;
+	display: none;
+}
+
+.video-demo{
+	width: 500px;
+	/*width: 100%*/
+	/*margin: 0 auto 50px;*/
+	border: 5px solid #3c5b6e;
+}
+
+.video-demo-contenedor{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+/*Here we can change media-querie to know the status of our browser screen*/
+@media screen and (max-width: 800px){
+/*	.contenedor{
+		width: auto;
+		max-width: 800px;
+	}*/
+	/*body{*/
+		/*border: 10px solid red;*/
+	*{
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+
+	.logotipo{
+		display: block;
+		margin: 10px 0px;
+
+	}
+
+	.menu{
+		display: block;
+	}
+
+	/*Portada*/
+	.titulo{
+		font-size: 45px; 
+		margin-top: 30px;
+	}
+
+	.title-a{
+		font-size: 15px;
+		padding-left: 0px;
+	}
+
+	.portada{
+		height: auto;
+	}
+
+	.portada .button{
+		display: inline-block;
+		margin: 30px 0px;
+		text-align: center
+	}
+
+	.guitarras h2{
+	 	margin: 30px 0px;
+	}
+
+	/*Guitarras*/
+	.izquierda, .derecha{
+		float: none;
+		position: static;
+	}
+
+	.guitarra li{
+		list-style: none;
+	}
+	
+	.guitarra.b{
+		height: auto;
+		width: auto;
+	}
+
+	.video-demo-contenedor{
+		margin-bottom: 40px;
+	}	
+	/*Guitarras*/
+
+	/*Footer*/
+	.intereses {
+		padding-right: 25px;
+	}
+	/*Footer*/
+
+	/*Precios*/
+	table{
+		margin: 0px;
+	} 
+
+	.tabla .contenedor{
+		overflow: auto;
+		margin: 50px 10px;
+		border: 1px solid #273b47;
+	}
+	/*Precios*/
+}
+
+
+@media screen and (max-width: 767px){
+	/*This only affects the elements that have the class called contenedor but only inside the footer*/
+	footer{
+		font-size: 12px;
+	}
+
+	.footer .contenedor{
+		display: block;
+		margin: 0px
+	}
+
+	.footer-img{
+		margin: 0px auto;
+	}
+
+	.contacto{
+		margin: 0px auto;
+	}
+
+	.contacto a{
+		margin: 0px auto;
+	}
+
+	.formulario{
+		display: block;
+		margin: 10px auto;	
+		width: 200px;
+	}
+	
+	.sexo label{
+		margin: 0px 4px;
+	}
+
+	.intereses label{
+		display: block;
+		text-align: left;
+		font-size: 16px;
+		padding-left: 3px;
+	}
+
+	input[type="text"], input[type="email"]{
+		font-size: 17px;
+		padding: 5px;
+	}
+
+
+	input[type="radio"], input[type="checkbox"]{
+		zoom: 1.5;
+	}
+
+	.col1{
+		margin: 0px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.menu{
+		position: static;
+	}
+
+/*	.menu li:first-child{
+		margin: 0px; 
+		border: 2px solid red;
+	}*/
+
+/*	.menu li{
+		margin: 2px;
+	}*/
+
+	.menu ul{
+		padding: 0px;
+ 	}
+}
+
+@media screen and (max-width: 500px){
+	/*Portada*/
+	.precios .header .logotipo {
+		margin: 30px;
+	}
+
+	.portada .button, .portada a {
+		display: block;
+	}
+
+	.burger-button {
+		display: block;
+	}
+
+	.portada .contenedor {
+		position: static;
+	}
+
+	.menu {
+		background: rgba(255, 60, 88, 0.8);
+		position: fixed;
+		left: -100%; 
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		/*This transition helps us to give to the menu an animation, its value is in second or miliseconds*/
+		transition: 0.3s;
+	}
+	
+	.menu.active{
+		left: 0;
+	}
+
+	.menu ul{
+		/*This features are the same we can use flex: 1 and width: 100% and we will have the same 
+		effect*/
+		flex: 1;
+		/*width: 100%; */
+	}
+
+	.menu li{
+		display: block;
+		margin: 0px;
+		padding: 8px 0px;
+		border-bottom: 2px solid white;		
+	}
+
+	.menu li:first-child{
+		border-top: 2px solid white;
+	}
+
+	.menu li:before{
+		display: none;
+	}
+
+	.portada{
+		text-align: center;	
+	}
+
+	.guitarras li{
+		font-size: 14px;
+		margin: 3px 0px;
+	}
+
+	.titulo{
+		font-size: 30px;
+	}
+	
+	.title-a, .title-b{
+		padding: 0px;
+	}
+
+	.title-a{
+		font-size: 13px;
+	}
+
+	.button{
+		font-size: 12px;
+	}
+	/*Portada*/
+
+	/*Guitarras*/
+	.guitarra img{
+		width: 200px;
+		height: auto;
+	}
+
+	.title-b{
+		font-size: 30px
+	}
+
+/*
+	.video-demo-contenedor{
+		margin: 0 10px 30px 10px;
+	}
+*/
+/*	.video-demo{
+		margin: 0 20px;
+	}*/
+}
+
+video{
+	width: 100% ;
+}
+
+.video-responsive-contenedor{
+	position: relative;
+	/*This is a single operation of a scale (19:6) we have to divide the height of the video between the 
+	width of the video so we will be able to have the percentage of the neccesary padding top value*/
+	padding-top: 56.25%;
+	/*text-align: center;*/
+}
+
+.video-responsive-src{
+	position: absolute;	
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+	.portada{	
+		background-image: url('../images/background2x.png');
+		background-color: #1F313C;
+	}
+}

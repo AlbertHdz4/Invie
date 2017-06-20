@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>Invie - Precios</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+		<link rel="stylesheet" href="CSS/invie.css" />
+	</head>
+<body class="precios">
+	<div class="portada">
+		<header id="header" class="header contenedor">
+			<figure class="logotipo">
+				<img src="Images/invie.png" width="186" height="60" alt="Invie Logotipo"/>
+			</figure>
+			<span class="burger-button icon-menu" id="burger-button"></span>
+			<nav class="menu" id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#guitarras">Guitarras</a></li>
+					<li><a href="precios.html">Precios</a></li>				
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<section class="tabla">
+		<!-- Section where we have created a table with the tag <table> -->
+		<div class="contenedor">
+			<table>
+				<!-- A table in HTML is very similar to HTML, we need a header and a body, 
+				tags that help us to create those areas, are <thead> and <tbody> -->
+				<thead>
+					<!-- To create a row (fila) we use the tag <tr> -->
+					<tr>
+						<!-- We have two types of cells, one for header <th> table header and the other is <td> table division -->
+						<th>Modelo</th>
+						<th>Precio</th>
+						<th>Descripción</th>
+						<th>Modelo</th>
+						<th>Precio</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Content -->
+					<tr>
+						<td>Invie Acustica</td>
+						<td>$8,000 MXN</td>
+						<td>Una guitarra para ritmos suaves</td>
+						<td>Invie Acustica</td>
+						<td>$8,000 MXN</td>
+						<td>Una guitarra para ritmos suaves</td>
+					</tr>
+					<tr>
+						<td>Invie Classic</td>
+						<td>$10,000 MXN</td>
+						<td>Una guitarra muy Pro</td>
+						<td>Invie Classic</td>
+						<td>$10,000 MXN</td>
+						<td>Una guitarra muy Pro</td>
+					</tr>
+					<tr>
+						<td>Invie Custom</td>
+						<td>$9,000 - $12,000 MXN</td>
+						<td>Se ajusta a lo que deseas</td>
+						<td>Invie Custom</td>
+						<td>$9,000 - $12,000 MXN</td>
+						<td>Se ajusta a lo que deseas</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">		
+				<img class="footer-img" src="images/invie-white.png" alt="logotipo blanco" />
+				<a class="tel" href="tel:+5526378729"><strong>Teléfono</strong><span><br />(+55) 3059 2047</span></a>
+				<a class="mail" href="mailto:contacto@invie.com"><strong>Email</strong><span><br />contacto@invie.com</span></a>
+			</div>
+			<form class="formulario">
+				<div class="col1">	
+					<label for="Nombre">Nombre</label>
+					<input type="text" requiered id="Nombre" name="nombre" />
+					<label for="email">Email</label>
+					<input type="email" required id="Email" nombre="email" />
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" id="mujer" name="sexo" value="mujer" checked /> Mujer
+						</label>
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" id="cotizacion" name="intereses" value="cotización" checked />Cotización 
+						</label>
+						<label for="Reclamos">
+							<input type="checkbox" id="reclamos" name="intereses" value="reclamos" />Reclamos 
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" id="comentarios" name="intereses" value="comentarios" />Comentarios 
+						</label>
+						<label for="otros">
+							<input type="checkbox" id="otros" name="intereses" value="otros" />Otros                          
+						</label>
+					</div>
+				</div>
+				<div class="col2">
+					<label for="comentarios">Comentario</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+					<input type="submit" value="Enviar" class="button" />
+				</div>
+			</form>
+		</div>
+	</footer>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+		<script>
+			var consulta = window.matchMedia("(max-width:500px)");
+			var burgerButton = document.getElementById("burger-button"); 
+			var menu = document.getElementById("menu");
+			mediaQuery();
+			consulta.addListener(mediaQuery);
+			// Lazy loading
+			var blazy = new Blazy
+			({
+				// opciones de Blazy, we need to put a selector to indicate which tags or information we are 
+				// going to modify, in this case images
+				selector: "img"
+			});
+
+			function mediaQuery()
+			{
+				if(consulta.matches)
+				{
+					console.log("se cumplio la condicion");
+					burgerButton.addEventListener("touchstart", active);
+				}
+				else
+				{
+					burgerButton.removeEventListener("touchstart", active);
+					console.log("No se cumplio la condicion");
+				}
+			}			
+			// $menu.classList.add("active");
+			// $menu.classList.remove("active");
+	 		function active()
+			{
+				menu.classList.toggle("active");
+			}
+		</script>
+</body>
+</html>
