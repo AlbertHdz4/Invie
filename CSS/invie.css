@@ -661,6 +661,8 @@ video{
 @media screen and (-webkit-min-device-pixel-ratio: 2){
 	.portada{
 		background-image: url('../Images/inviebackground2x.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
 		background-color: #1F313C;
 	}
 }
