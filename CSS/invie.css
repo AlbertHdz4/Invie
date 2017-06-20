@@ -49,7 +49,7 @@ Universal Selector
 	margin: 10px;
 }
 
-Tag Selector 
+Tag Selector
 header {
 	background: blue;
 }
@@ -110,7 +110,7 @@ We are only allowed to have an only one ID, it is not possible to have another I
 /*General Classes*/
 .contenedor{
 	max-width: 800px;
-	margin: auto;	
+	margin: auto;
 }
 
 body{
@@ -155,7 +155,7 @@ body{
 }
 
 .portada{
-	background-image: url('../images/background.png');
+	background-image: url('../Images/background.png');
 	background-size: cover;
 	padding: 20px;
 	color: white;
@@ -191,7 +191,7 @@ body{
 	color: white;
 	padding: 7px 12px;
 	font-size: 18px;
-	border: none;	
+	border: none;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -206,7 +206,7 @@ body{
 }
 
 .guitarra{
-	/*Overflow helps to keep the box model of our articles in HTML, 
+	/*Overflow helps to keep the box model of our articles in HTML,
 	if we want to place an image with relative we have to delete the overflow style*/
 	/*overflow: hidden;*/
 	margin: 15px 15px 50px 15px;
@@ -243,7 +243,7 @@ body{
 	margin-top: 70px;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	clear: both; 
+	clear: both;
 }
 
 .footer .contenedor {
@@ -253,8 +253,8 @@ body{
 
 .contacto{
 	display: flex;
-	width: 300px; 
-	flex-wrap: wrap;    	
+	width: 300px;
+	flex-wrap: wrap;
 }
 
 .contacto img{
@@ -308,7 +308,7 @@ body{
 #comentarios{
 	margin-top: 0px;
 	margin-right: auto;
-	margin-left: auto; 
+	margin-left: auto;
 	margin-bottom: 20px;
 	text-align: left;
 }
@@ -394,7 +394,7 @@ textarea{
 
 	/*Portada*/
 	.titulo{
-		font-size: 45px; 
+		font-size: 45px;
 		margin-top: 30px;
 	}
 
@@ -426,7 +426,7 @@ textarea{
 	.guitarra li{
 		list-style: none;
 	}
-	
+
 	.guitarra.b{
 		height: auto;
 		width: auto;
@@ -434,7 +434,7 @@ textarea{
 
 	.video-demo-contenedor{
 		margin-bottom: 40px;
-	}	
+	}
 	/*Guitarras*/
 
 	/*Footer*/
@@ -446,7 +446,7 @@ textarea{
 	/*Precios*/
 	table{
 		margin: 0px;
-	} 
+	}
 
 	.tabla .contenedor{
 		overflow: auto;
@@ -482,10 +482,10 @@ textarea{
 
 	.formulario{
 		display: block;
-		margin: 10px auto;	
+		margin: 10px auto;
 		width: 200px;
 	}
-	
+
 	.sexo label{
 		margin: 0px 4px;
 	}
@@ -518,7 +518,7 @@ textarea{
 	}
 
 /*	.menu li:first-child{
-		margin: 0px; 
+		margin: 0px;
 		border: 2px solid red;
 	}*/
 
@@ -552,7 +552,7 @@ textarea{
 	.menu {
 		background: rgba(255, 60, 88, 0.8);
 		position: fixed;
-		left: -100%; 
+		left: -100%;
 		right: 0px;
 		top: 0px;
 		bottom: 0px;
@@ -563,13 +563,13 @@ textarea{
 		/*This transition helps us to give to the menu an animation, its value is in second or miliseconds*/
 		transition: 0.3s;
 	}
-	
+
 	.menu.active{
 		left: 0;
 	}
 
 	.menu ul{
-		/*This features are the same we can use flex: 1 and width: 100% and we will have the same 
+		/*This features are the same we can use flex: 1 and width: 100% and we will have the same
 		effect*/
 		flex: 1;
 		/*width: 100%; */
@@ -579,7 +579,7 @@ textarea{
 		display: block;
 		margin: 0px;
 		padding: 8px 0px;
-		border-bottom: 2px solid white;		
+		border-bottom: 2px solid white;
 	}
 
 	.menu li:first-child{
@@ -591,7 +591,7 @@ textarea{
 	}
 
 	.portada{
-		text-align: center;	
+		text-align: center;
 	}
 
 	.guitarras li{
@@ -602,7 +602,7 @@ textarea{
 	.titulo{
 		font-size: 30px;
 	}
-	
+
 	.title-a, .title-b{
 		padding: 0px;
 	}
@@ -642,14 +642,14 @@ video{
 
 .video-responsive-contenedor{
 	position: relative;
-	/*This is a single operation of a scale (19:6) we have to divide the height of the video between the 
+	/*This is a single operation of a scale (19:6) we have to divide the height of the video between the
 	width of the video so we will be able to have the percentage of the neccesary padding top value*/
 	padding-top: 56.25%;
 	/*text-align: center;*/
 }
 
 .video-responsive-src{
-	position: absolute;	
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -659,7 +659,7 @@ video{
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2){
-	.portada{	
+	.portada{
 		background-image: url('../images/background2x.png');
 		background-color: #1F313C;
 	}
